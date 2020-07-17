@@ -1,0 +1,57 @@
+@media screen and (min-width: 561px) {
+  .text-div {
+    width:100%;
+    white-space:nowrap;
+    overflow: hidden;
+    animation: revealText 5s;
+    color:white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* margin: 0 auto; */
+    top:130%;
+    text-align: left;
+}
+.content {
+  height:200px;
+  width:450px;
+  margin: 0 auto;
+  position:relative;
+}
+@keyframes revealText {
+  0% {
+     width:0%;
+     color: whitesmoke;
+
+   }
+  100% {
+     width:100%;
+     color: white;
+   
+  
+  }
+}
+}
+
+@media screen and (max-width: 560px) {
+  #one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .content {
+    display: inline-block;
+    margin-left: -20%;
+    margin-top: -20%;
+  }
+  .text-div p {
+    font-size: 30px;
+  }
+  .text-div .hide {
+    display: none;
+  }
+  .colorBlue {
+    color: cornflowerblue;
+  }
+}
